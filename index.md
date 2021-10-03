@@ -15,7 +15,8 @@
 
 <p>This is  a website that shows the landing page of a street food restaurant.It contains all my background information,some sample projects that I have worked on and the experience gained.</p>
 ​
-## Installation Requirements
+## Installation Requirements 
+
 ​
 * Either a computer,phone,tablet or an Ipad
 * An access to the Internet
