@@ -1,7 +1,7 @@
 
 
   
- body {
+ * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -10,32 +10,44 @@
     }
 
     .banner{
-        height: 500px;
+        height: 100vh;
         background-color: #ADADC9;
         overflow: hidden;
     }
     nav{
         display: flex;
         position: absolute;
-        padding: 0px;
-        margin: 0px;
         justify-content: space-between;
         text-align: center;
+        width: 100vw;
         z-index: 1;
         }
     
-        nav li{
+        nav > li{
             margin-top: 100px;
             padding-top: 50px;
             list-style: none;
             display:inline-block
             }
-        nav li  a{
+        nav > li > a{
             color: black;
             font-weight: bold;
             text-decoration: none;
-
         }
+
+        .text-message{
+            position: absolute;
+            padding-top: 300px;
+            padding-left: 130px;
+        }
+
+        .text-message > h2{
+            font-size: 50px;
+            font-weight: 600;
+            }
+            .orange{
+                color: #EAAB1B;
+            }
         .circle {
             border-radius: 0 0 50% 50%/0 0 100% 100%;
             background: #649549;
@@ -110,6 +122,41 @@
         .couple > p {
             font-size: 20px;
         }
+
+        .burgers{
+            background-color: #C9ECB5;
+            margin: o 70px;
+            padding-bottom: 100px;
+            height: auto;
+        }
+        .burger-king{
+            display: grid;
+            padding-right: 100px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .pic{
+            padding-top: 50px;
+        }
+        .pic img{
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 70px;
+            height: 150px;
+            width: 200px;
+        }
+        .description{
+            background-color: white;
+            padding: 20px;
+            margin-left: 120px;
+            width: 350px;
+            border-bottom-right-radius: 50px;
+        }
+        .description > p{
+            margin-left: 80px;
+            text-align: center;
+        }
+
+        
   span{
     color: #6CB840;
     }
