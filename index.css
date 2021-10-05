@@ -1,23 +1,19 @@
 
-
   
  * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins';
-    overflow-x: hidden;
     }
 
     .banner{
         height: 100vh;
         background-color: #ADADC9;
-        overflow: hidden;
     }
     nav{
         display: flex;
-        position: absolute;
-        justify-content: space-between;
+        justify-content: space-evenly;
         text-align: center;
         width: 100vw;
         z-index: 1;
@@ -25,7 +21,7 @@
     
         nav > li{
             margin-top: 100px;
-            padding-top: 50px;
+            padding-top: 10px;
             list-style: none;
             display:inline-block
             }
@@ -34,9 +30,9 @@
             font-weight: bold;
             text-decoration: none;
         }
-
+        li > a {
+            text-decoration: none;}
         .text-message{
-            position: absolute;
             padding-top: 300px;
             padding-left: 130px;
         }
@@ -104,13 +100,31 @@
             height: 300px;
             width: 300px;
         }
+        button{
+            background-color: green;
+            color:white;
+            border-radius: 50px;
+            padding: 10px;
+            width: 200px;
+            border: hidden;
+            font-size: large;
+            margin-top: 20px;
+        }
+        .send{background-color: green;
+            color:white;
+            border-radius: 50px;
+            padding: 10px;
+            width: 100px;
+            border: hidden;
+            margin-top: 20px;
+
+        }
         
         .dinner{
-            position: relative;
+            display: flex;
         }
         .couple{
             margin: 300px 300px 0px 0px;
-            float: right;
             text-align: center;
         }
 
@@ -125,11 +139,15 @@
 
         .burgers{
             background-color: #C9ECB5;
-            margin: o 70px;
+            margin-top: 50px;
+            margin-bottom: 50px;
             padding-bottom: 100px;
             height: auto;
+            text-align: center;
         }
         .burger-king{
+            display: flex;
+            background-color: #C9ECB5;
             display: grid;
             padding-right: 100px;
             grid-template-columns: repeat(3, 1fr);
@@ -156,14 +174,32 @@
             text-align: center;
         }
 
-        
+        .hot-deals{
+            background-color: #74a856;
+            margin-top: 50px;;
+            padding-top: 20px;
+        }
+        h1{color: green;}
+        .hot-deals > h2{
+            text-align: center;
+        }
+
+        .hot-deals > .juice{
+            position: relative;
+        }
+        .hot-deals > .meat{
+            position: absolute;
+            width: 100px;
+            height: 50px;
+        }
   span{
     color: #6CB840;
     }
 
-
-
-
+    #contact{
+        background-color: #FFD77C;
+        float: ;
+    }
 
 .row{
     background-color: white;
@@ -178,10 +214,12 @@
 
 
 
-input{border-radius: 30px;
+input{border-radius: 50px;
     padding-left: 20px;
+    padding: 20px;
     border: none;
-    height: 30px;}
+    height: 30px;
+width: 400px;}
 
 #footer{
     background-color: #C9ECB5;
@@ -216,12 +254,14 @@ input{border-radius: 30px;
     }
     
 #icon{
+    position: relative;
         float: right;
         width: 10%;
         margin-top: 50px;
         display:flex;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
         align-items: center; 
+        z-index: 1;
      }
      #button{
         color: rgb(255,255,255);
