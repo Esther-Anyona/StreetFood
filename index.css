@@ -1,15 +1,14 @@
-
-  
- * {
-    margin: 0px;
-    padding: 0px;
+ 
+ body {
+    margin: 50px;
     box-sizing: border-box;
     font-family: 'Poppins';
     }
 
     .banner{
-        height: 100vh;
+        height: 80vh;
         background-color: #ADADC9;
+        overflow: hidden;
     }
     nav{
         display: flex;
@@ -33,6 +32,7 @@
         }
         li > a {
             text-decoration: none;}
+
         .text-message{
             padding-top: 100px;
             padding-left: 130px;
@@ -46,55 +46,48 @@
             .orange{
                 color: #EAAB1B;
         }
-        .rotating-dish {
-            overflow: hidden;
-            border: 3px dashed #6cb840;
-            margin-top: 380px;
-            margin-left: 400px;
-            width: 550px;
-            height: 600px;
-            border-radius: 50%;
+        .eclipse{
+            background-color: #649549;
+            border-radius: 0 0 50% 50%/0 0 100% 100%;
+            width: 50vw;
+            height: 50vh;
+            transform: translateX(50%);
+            margin-left: 200px;
+            margin-bottom: 300px;
+            
         }
-        
-        .rotating-dish img {
-            z-index: 1;
-            position: absolute;
-            margin-top: 200px;
-            margin-left: 220px;
-            width: 100px;
-            height: 100px;
-        }
-        
-        .rotating-dish img:first-child {
-            transform: rotate(0deg) translate(200px);
-        }
-        
-        .rotating-dish img:nth-child(2) {
-            transform: rotate(45deg) translateY(-250px);
-        }
-        
-        .rotating-dish img:nth-child(3) {
-            transform: rotate(90deg) translateY(-250px);
-        }
-        
-        .rotating-dish img:nth-child(4) {
-            transform: rotate(-45deg) translateY(-250px);
-        }
-        
-        .rotating-dish img:nth-child(5) {
-            transform: rotate(-90deg) translateY(-250px);
-        }
-        
-        .focus-dish {
+        .circle {
             position: relative;
-            margin-left: 63%;
-            bottom: 15%;
+            background-color: #649549;
+            border: 2px dashed #6cb840;
+            width: 24em;
+            height: 24em;
+            border-radius: 50%;
+            padding: 0em;
         }
+        .circle a{
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            width: 4em;
+            height: 4em;
+        }
+        .circle img {
+            display: block;
+        }
+        .one{
+            transform: translate(12em);}
+        .two{
+            transform: rotate(60deg) translate(12em) rotate(-60deg);}
+        .three{
+            transform: rotate(120deg) translate(12em) rotate(-120deg);}
+        .four{
+            transform: translate(-12em);}
+        .five{
+            transform: rotate(240deg) translate(12em) rotate(-240deg);}
         
-        .focus-dish > img {
-            height: 300px;
-            width: 300px;
-        }
+        
         button{
             background-color: green;
             color:white;
@@ -116,7 +109,9 @@
         }
         
         .dinner{
+            height: 60vh;
             display: flex;
+            
             padding-top: 0px;
             margin-bottom: 0px;
         }
@@ -144,6 +139,7 @@
         }
         .burgers > h2{
             padding-top: 20px;
+            font-size: 30px;
         }
         .burger-king{
             display: flex;
@@ -158,7 +154,7 @@
         .pic img{
             position: absolute;
             margin-top: 50px;
-            margin-left: 70px;
+            margin-left: -250px;
             height: 150px;
             width: 200px;
         }
@@ -176,14 +172,17 @@
 
         .hot-deals{
             background-color: #92b97c;
-            margin-top: 50px;;
-            padding-top: 0px;
+            margin-top: 0px;;
+            padding-top: 20px;
         }
-        h1{color: green;}
+        h1{
+            color: green;
+            font-size: 50px;}
 
         .hot-deals > h2{
             padding-top: 20px;
             text-align: center;
+            font-size: 30px;
         }
 
         .hot-deals > .juice{
@@ -192,14 +191,21 @@
         }
         .hot-deals > .meat{
             position: absolute;
-            width: 100px;
-            height: 50px;
+            height: 300px;
+            margin-top: 350px;
+            margin-left: -300px;
         
         }
-        .text-deals{padding-top: 0px;
-           padding-left: 1200px;
-            font-size: 20px;
-            padding-bottom: 200px;
+        .text-deals{
+            float: right;
+            padding-right: 200px;
+            padding-top: 200px;
+            font-size:  20px;
+            text-align: left;
+            margin-right: 300px;
+        }
+        .offers{
+            text-align: left;
         }
   span{
     color: green;
@@ -212,6 +218,7 @@
         padding-right: 500px;
         font-size: 20px;
         margin-bottom: 0px;
+        text-align: center;
         }
 
 .row{
@@ -225,15 +232,15 @@ input{border-radius: 50px;
     padding-left: 20px;
     padding: 20px;
     border: none;
-    height: 30px;
-width: 400px;}
+    height: 10px;
+    width: 400px;}
 
 #footer{
     background-color: #C9ECB5;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 10px;
+    padding: 30px;
     padding-top: 50px;
     margin-top: 0px;
    }
@@ -274,13 +281,16 @@ width: 400px;}
         z-index: 1;
      }
      .insta{
-         margin-bottom: 100px;
+         border-radius: 1em;
+         position: relative;
+         margin-bottom: 75px;
          float: right;
     
      }
      #send{position: absolute;
-         margin-top: 100px;
+         margin-top: 50px;
         align-content: center;
+        margin-bottom: 75px;
          
      }
      #button{
